@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from backend.app.database import Base
-from backend.app.database import engine
-from backend.app.routes.upload import router as upload_router
-from backend.app.routes.chat import router as chat_router
-from backend.app.routes.auth_routes import router as auth_router
+from app.database import Base
+from app.database import engine
+from app.routes.upload import router as upload_router
+from app.routes.chat import router as chat_router
+from app.routes.auth_routes import router as auth_router
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
