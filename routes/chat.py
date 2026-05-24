@@ -1,10 +1,10 @@
 from fastapi import APIRouter
 
-from backend.app.schemas import ChatRequest
+from app.schemas import ChatRequest
 
-from backend.Services.embedding_service import model
-from backend.Services.vector_service import search_embeddings
-from backend.Services.llm_service import generate_response
+from Services.embedding_service import model
+from Services.vector_service import search_embeddings
+from Services.llm_service import generate_response
 
 router = APIRouter()
 
