@@ -4,10 +4,10 @@ from fastapi import File
 
 import os
 
-from backend.Services.pdf_service import extract_text
-from backend.Services.chunk_service import chunk_text
-from backend.Services.embedding_service import generate_embeddings
-from backend.Services.vector_service import store_embeddings
+from Services.pdf_service import extract_text
+from Services.chunk_service import chunk_text
+from Services.embedding_service import generate_embeddings
+from Services.vector_service import store_embeddings
 
 router = APIRouter()
 
