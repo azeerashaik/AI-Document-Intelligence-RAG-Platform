@@ -3,13 +3,13 @@ from fastapi import Depends
 from fastapi import HTTPException
 
 from sqlalchemy.orm import Session
-from backend.app.database import get_db
-from backend.app.models import User
-from backend.app.schemas import UserRegister
-from backend.app.schemas import UserLogin
-from backend.app.auth import hash_password
-from backend.app.auth import verify_password
-from backend.app.auth import create_access_token
+from app.database import get_db
+from app.models import User
+from app.schemas import UserRegister
+from app.schemas import UserLogin
+from app.auth import hash_password
+from app.auth import verify_password
+from app.auth import create_access_token
 
 router = APIRouter()
 
