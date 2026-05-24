@@ -5,7 +5,7 @@ from jose import JWTError
 from datetime import datetime
 from datetime import timedelta
 
-from backend.app.config import SECRET_KEY
+from app.config import SECRET_KEY
 
 pwd_context = CryptContext(
     schemes=["bcrypt"],
